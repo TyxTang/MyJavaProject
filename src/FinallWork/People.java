@@ -21,8 +21,6 @@ public class People {
         p.setWeight(62);
         p.speak();
     }
-
-
 }
 
 
