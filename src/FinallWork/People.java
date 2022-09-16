@@ -14,6 +14,7 @@ class People_1{
     }
 }
 
+
 public class People {
     public static void main(String[] args){
         People_1 p = new People_1();
