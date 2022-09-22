@@ -15,16 +15,10 @@ class TyxPhoneTest {
         System.out.println("3.测试游戏功能");
         System.out.print("你的选择是：");
         int n = Scan.input.nextInt();
-        switch (n){
-            case 1:
-                Phone.about();
-                break;
-            case 2:
-                Phone.call(Scan.input.nextInt());
-                break;
-            case 3:
-                Phone.playGame();
-                break;
+        switch (n) {
+            case 1 -> Phone.about();
+            case 2 -> Phone.call(Scan.input.nextInt());
+            case 3 -> Phone.playGame();
         }
     }
 }
@@ -33,9 +27,9 @@ class Input{
     public static void In() {
         Phone.brand = "Apple";
         Phone.price = 12999;
-        Phone.type = "iPhone 14 pro max 1TB";
+        Phone.type = "iPhone 14 pro max 1TB 暗夜紫";
         Phone.os = "iOS 16";
-        Phone.memory = "128G";
+        Phone.memory = "1TB";
     }
 }
 
@@ -54,19 +48,11 @@ class Phone{
         System.out.println("内存：" + memory);
     }
     static void call(int no){
-        switch (no){
-            case 1:
-                System.out.println("打电话给爷爷");
-                break;
-            case 2:
-                System.out.println("打电话给奶奶");
-                break;
-            case 3:
-                System.out.println("打电话给爸爸");
-                break;
-            case 4:
-                System.out.println("打电话给妈妈");
-                break;
+        switch (no) {
+            case 1 -> System.out.println("打电话给爷爷");
+            case 2 -> System.out.println("打电话给奶奶");
+            case 3 -> System.out.println("打电话给爸爸");
+            case 4 -> System.out.println("打电话给妈妈");
         }
     }
     static void playGame(){

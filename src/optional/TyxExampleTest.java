@@ -1,4 +1,4 @@
-package Homework;
+package optional;
 
 class TyxExampleTest {
     public static void main(String[] args) {

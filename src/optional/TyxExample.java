@@ -1,4 +1,4 @@
-package Homework;
+package optional;
 
 class Example{
     static void graph(){
