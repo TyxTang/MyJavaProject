@@ -57,6 +57,7 @@ class Phone{
     }
     static void playGame(){
         System.out.println("玩猜字游戏");
+        System.out.println("玩玩了");
     }
 }
 
