@@ -9,38 +9,36 @@ public class TyxCar {
         int days = input.nextInt();
         System.out.println("请输入要租赁的汽车品牌（1.宝马  2.别克）:");
         int brand = input.nextInt();
-        switch (brand){
-            case 1:
+        switch (brand) {
+            case 1 -> {
                 System.out.println("1.550i\n请输入要租赁的汽车型号：");
                 int type = input.nextInt();
-                switch (type){
-                    case 1:
+                switch (type) {
+                    case 1 -> {
                         Car bmw = new Car("宝马", "550i");
                         System.out.println("\n" + bmw.printInfo());
                         System.out.println("顾客您好！您需要支付的租赁费用为" + bmw.calRent(days) + "元");
-                        break;
-                    default:
-                        System.out.println("输入错误");
+                    }
+                    default -> System.out.println("输入错误");
                 }
-                break;
-            case 2:
+            }
+            case 2 -> {
                 System.out.println("1.商务舱GL8  2.林荫大道\n请输入要租赁的汽车型号：");
                 int type_2 = input.nextInt();
-                switch (type_2){
-                    case 1:
+                switch (type_2) {
+                    case 1 -> {
                         Car bie_GL = new Car("别克", "商务舱GL8");
                         System.out.println("\n" + bie_GL.printInfo());
                         System.out.println("顾客您好！您需要支付的租赁费用为" + bie_GL.calRent(days) + "元");
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         Car bie = new Car("别克", "林荫大道");
                         System.out.println("\n" + bie.printInfo());
                         System.out.println("顾客您好！您需要支付的租赁费用为" + bie.calRent(days) + "元");
-                        break;
-                    default:
-                        System.out.println("输入错误");
+                    }
+                    default -> System.out.println("输入错误");
                 }
-                break;
+            }
         }
     }
 }
