@@ -22,7 +22,7 @@ public class TyxScoreExpertion {
             }
             System.out.println("平均成绩为：" + sum / n);
         } catch (ArithmeticException e1) {
-            System.out.println(e1.toString() + "输入错误！学生人数不能为0！");
+            System.out.println(e1.toString() + "  : 输入错误！学生人数不能为0！");
             System.exit(404);
         }
         try {
@@ -30,7 +30,7 @@ public class TyxScoreExpertion {
             int m = input.nextInt();
             System.out.println("该学生的成绩为：" + score[m - 1]);
         } catch (ArrayIndexOutOfBoundsException e2) {
-            System.out.println(e2.toString() + "输入错误！选择的学生超出范围！");
+            System.out.println(e2.toString() + "  : 输入错误！选择的学生超出范围！");
             System.exit(666);
         }
     }
