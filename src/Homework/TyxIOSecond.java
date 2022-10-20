@@ -14,7 +14,6 @@ public class TyxIOSecond {
             a = (int)(Math.random() * 10000);
             Tyxin.write(a);
         }
-
         System.out.println(System.currentTimeMillis() - start);
     }
 }
