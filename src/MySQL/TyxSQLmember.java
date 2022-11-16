@@ -56,8 +56,9 @@ public class TyxSQLmember extends JFrame {
                         if(tx1.getText().equals(rs.getString("name"))) {
                             tx2.setText(rs.getString("salary"));
                         }
-                        else {tx2.setText("你输入姓名有误");}
+
                     }
+                    else {tx2.setText("你输入姓名有误");}
                 }
                 stmt.close();
                 ((Connection) con).close();
