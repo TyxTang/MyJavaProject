@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
 public class TyxFac extends JFrame {
     private JLabel lbl1, lbl2;
     private JTextField input, output;
