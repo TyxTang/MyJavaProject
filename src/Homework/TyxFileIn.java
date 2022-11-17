@@ -23,7 +23,7 @@ public class TyxFileIn {
     private static void writeFile() throws Exception {
         String s;
         while (true) {
-            System.out.println("输入字符串：");
+            System.out.println("输入五个整数");
             System.out.flush();
             s = keyread.readLine();
             if (s.length() == 0)

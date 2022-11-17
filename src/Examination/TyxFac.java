@@ -3,7 +3,9 @@ package Examination;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.util.logging.Handler;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class TyxFac extends JFrame {
     private JLabel lbl1, lbl2;
@@ -25,7 +27,7 @@ public class TyxFac extends JFrame {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
     }
-    class Handler implements java.awt.event.ActionListener {
+    class Handler implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             int fac = 1;
             int num = Integer.parseInt(input.getText());
@@ -37,8 +39,8 @@ public class TyxFac extends JFrame {
     }
     public static void main(String[] args) {
         TyxFac fac = new TyxFac();
-        fac.addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosing(java.awt.event.WindowEvent e) {
+        fac.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }
         });
